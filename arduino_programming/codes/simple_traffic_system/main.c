@@ -2,7 +2,7 @@
 #include <util/delay.h>
 
 //defining the pin for operation
-#define PUSH_SWITCH PB0 
+#define PUSH_SWITCH PB0
 #define RED_LED PD7
 #define GREEN_LED PD5
 #define YELLOW_LED PD6
