@@ -12,13 +12,9 @@ int main(void) {
     while (1) {
         // Set Pin PB5 HIGH (turn the LED ON).
         // PORTB is the Port B Output Register. Setting its 5th bit to 1 outputs HIGH.
-        PORTB |= (1 << PB5);
-        _delay_ms(500); // Wait for 1000 milliseconds (1 second)
-
-        // Set Pin PB5 LOW (turn the LED OFF).
-        // The '&=' operator with bitwise NOT ('~') clears the 5th bit, setting the pin LOW.
-        PORTB &= ~(1 << PB5);
-        _delay_ms(1500); // Wait for 1000 milliseconds (1 second)
+        PORTD ^= (1 << PD5);
+        _delay_ms(1000);
+// Wait for 1000 milliseconds (1 second)
     }
 
     return 0; // In embedded systems, this line is typically never reached as the loop runs indefinitely.
